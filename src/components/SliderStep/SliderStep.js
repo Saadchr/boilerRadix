@@ -43,7 +43,7 @@ function SliderStep() {
 
   return (
     <Container size={"1"} p={"5"}>
-      <Flex direction={"column"} justify={"center"} gap={"6"}>
+      <Flex direction={"column"} align={"center"} justify={"center"} gap={"6"}>
         <Heading size={"9"} className="self-center">
           Slider
         </Heading>

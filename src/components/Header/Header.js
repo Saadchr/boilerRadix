@@ -4,12 +4,7 @@ import Link from "next/link";
 import { ActivityLogIcon, MagnifyingGlassIcon } from "@radix-ui/react-icons";
 function Header() {
   return (
-    <Container
-      grow={"0"}
-      className="border-4 border-blue-400"
-      height={"1"}
-      size={"4"}
-    >
+    <Container grow={"0"} height={"1"} size={"4"}>
       <Box height={"1"} p={"4"} as="nav">
         <Flex align={"center"} justify={"between"} gap={"3"}>
           <ActivityLogIcon />
@@ -18,7 +13,7 @@ function Header() {
               className="no-underline  hover:bg-gray-200 active:bg-gray-300"
               href="/"
             >
-              <Text size={"1"}>home</Text>
+              home
             </Link>
             <Link href="/about">about</Link>
             <Link href="/contact">contact</Link>
