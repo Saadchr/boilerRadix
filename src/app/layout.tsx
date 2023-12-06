@@ -21,13 +21,13 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.className}`}>
-        <Flex className="min-h-full " direction={"column"} gap={"3"}>
-          <Theme>
+        <Theme className="h-full">
+          <Flex className="min-h-full" direction={"column"} gap={"3"}>
             <Header />
             {children}
-          </Theme>
-          <Footer />
-        </Flex>
+            <Footer />
+          </Flex>
+        </Theme>
       </body>
     </html>
   );
