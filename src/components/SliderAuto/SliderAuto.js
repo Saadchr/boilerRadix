@@ -41,6 +41,15 @@ function SliderStep() {
     dispatch({ type: "update", step: Number(value) });
   };
 
+  React.useEffect(() => {
+    console.log("useEffect");
+    const id = window.setInterval(() => {
+      dispatch({ type: "increment" });
+    }, 1000);
+
+    return () => window.clearInterval(id);
+  }, []);
+
   return (
     <Container size={"1"} p={"5"}>
       <Flex direction={"column"} justify={"center"} gap={"6"}>

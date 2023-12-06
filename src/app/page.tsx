@@ -12,6 +12,11 @@ export default function Home() {
             <Card variant="ghost" asChild>
               <Link href="./slider">Go to the Slider Project</Link>
             </Card>
+            <Card variant="ghost" asChild>
+              <Link href="./slider-auto">
+                Go to the Slider with auto-increment Project
+              </Link>
+            </Card>
           </li>
         </ul>
       </Flex>
