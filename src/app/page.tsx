@@ -4,7 +4,7 @@ import { Flex, Heading, Card } from "@radix-ui/themes";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-4 ">
+    <main className="flex min-h-full flex-col items-center justify-between p-4 ">
       <Flex direction={"column"} gap={"3"}>
         <Heading>This will handle a link to all the local projects</Heading>
         <ul>

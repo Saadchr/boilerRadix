@@ -1,8 +1,10 @@
-import { Theme, ThemePanel } from "@radix-ui/themes";
+import { Theme, ThemePanel, Flex } from "@radix-ui/themes";
 import "./globals.css";
 // import "@radix-ui/themes/styles.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -18,8 +20,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <body className={inter.className}>
-        <Theme>{children}</Theme>
+      <body className={`${inter.className}`}>
+        <Flex className="min-h-full " direction={"column"} gap={"3"}>
+          <Theme>
+            <Header />
+            {children}
+          </Theme>
+          <Footer />
+        </Flex>
       </body>
     </html>
   );

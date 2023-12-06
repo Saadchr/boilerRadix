@@ -44,7 +44,9 @@ function SliderStep() {
   return (
     <Container size={"1"} p={"5"}>
       <Flex direction={"column"} justify={"center"} gap={"6"}>
-        <Heading className="self-center">Slider</Heading>
+        <Heading size={"9"} className="self-center">
+          Slider
+        </Heading>
         <Heading className="self-center" color="blue" size={"7"} as="h3">
           {count.count}
         </Heading>
