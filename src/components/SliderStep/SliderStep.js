@@ -44,8 +44,15 @@ function SliderStep() {
   return (
     <Container size={"1"} p={"5"}>
       <Flex direction={"column"} justify={"center"} gap={"6"}>
+<<<<<<< Updated upstream
         <Heading className="self-center">Slider</Heading>
         <Heading className="self-center" color="blue" size={"7"} as="h3">
+=======
+        <Heading size={"9"} className="self-center">
+          Slider
+        </Heading>
+        <Heading className="self-center" color="blue" size={"9"} as="h3">
+>>>>>>> Stashed changes
           {count.count}
         </Heading>
         <Flex justify={"center"} gap={"3"} align={"center"}>
