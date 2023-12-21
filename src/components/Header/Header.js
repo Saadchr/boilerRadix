@@ -1,9 +1,30 @@
+import { Flex, Box, Container, Text } from "@radix-ui/themes";
 import React from "react";
-import { Section, Box, Container, Heading, Text, Flex } from "@radix-ui/themes";
-import * as NavigationMenu from "@radix-ui/react-navigation-menu";
+import Link from "next/link";
+import { ActivityLogIcon, MagnifyingGlassIcon } from "@radix-ui/react-icons";
+import NavigationMenuDemo from "@/components/NavigationMenuDemo";
 
 function Header() {
-  return <div></div>;
+  return (
+    <Container
+      className="border relative h-[42px] border-black"
+      color="gray"
+      grow={"0"}
+      size={"4"}
+      pl={"4"}
+      pr={"4"}
+      pt={0}
+      pb={0}
+    >
+      <Flex className="" align={"center"} justify={"between"} gap={"3"}>
+        <ActivityLogIcon />
+
+        <NavigationMenuDemo />
+
+        <MagnifyingGlassIcon />
+      </Flex>
+    </Container>
+  );
 }
 
 export default Header;
